@@ -25,3 +25,4 @@ prettyping httping lftp \
 ioping
 
 # shell
+sudo yum -y install tree
