@@ -7,3 +7,9 @@ sudo systemctl start nginx
 
 
 # package - network analysis
+
+
+ip r s
+cat > 1  << END
+asdf
+END
