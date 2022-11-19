@@ -1,5 +1,5 @@
 ## amazon-linux-extras
-sudo amazon-linux-extras -y install nginx1
+sudo amazon-linux-extras install nginx1 -y
 sudo systemctl enable nginx
 sudo systemctl start nginx
 
