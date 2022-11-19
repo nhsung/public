@@ -1,4 +1,5 @@
 ## fetch run scripts
+cd ~
 wget https://raw.githubusercontent.com/nhsung/public/master/{01_inst_git.sh,11_inst_pkgs.sh,sample_curl.sh}
 
 
