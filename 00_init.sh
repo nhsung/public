@@ -15,5 +15,9 @@ sudo yum upgrade -y
 
 
 ## run scripts on ec2
+
 cat 01_inst_git_zsh.sh | bash -s
+cat 02_inst_amazon.sh | bash -s
 cat 11_inst_pkgs.sh | bash -s
+cat 21_inst_tmux.sh | bash -s
+cat 31_inst_perf_test.sh | bash -s
