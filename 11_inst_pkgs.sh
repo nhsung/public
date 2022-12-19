@@ -12,9 +12,7 @@ sudo systemctl enable nginx
 sudo yum -y install neovim tmate
 
 # network & storage
-sudo yum -y install wireshark nmap hping3 iperf3 \
-prettyping httping lftp \
-ioping
+sudo yum -y install wireshark nmap hping3 prettyping httping lftp
 
 # shell
 sudo yum -y install tree
