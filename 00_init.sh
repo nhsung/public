@@ -12,5 +12,5 @@ sudo yum upgrade -y
 
 
 ## run scripts on ec2
-cat 01_inst_git.sh | bash -s
+cat 01_inst_git_zsh.sh | bash -s
 cat 11_inst_pkgs.sh | bash -s
