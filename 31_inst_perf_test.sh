@@ -1,5 +1,5 @@
 yum install -y stress-ng systat atop fio iotop ioping iperf3 \
-nmon htop
+htop
 
 
 ## configure the ATOP and SAR monitoring tools
