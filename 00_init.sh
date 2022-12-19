@@ -14,3 +14,9 @@ sudo yum upgrade -y
 ## run scripts on ec2
 cat 01_inst_git.sh | bash -s
 cat 11_inst_pkgs.sh | bash -s
+
+
+## zsh
+sudo yum -y install util-linux-ng
+# enable zsh login shell
+sudo chsh -s $(which zsh) ec2-user
