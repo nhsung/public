@@ -9,7 +9,7 @@ sudo systemctl enable nginx
 ## yum
 
 # admin
-sudo yum -y install neovim tmate
+sudo yum -y install neovim
 
 # network & storage
 sudo yum -y install wireshark nmap hping3 prettyping httping lftp
