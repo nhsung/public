@@ -1,8 +1,6 @@
 sudo su -
 amazon-linux-extras install -y epel
-yum install -y stress-ng
-yum install -y systat atop
-yum install -y iotop
+yum install -y stress-ng systat atop iotop iperf3
 
 
 ## configure the ATOP and SAR monitoring tools
