@@ -2,7 +2,7 @@
 
 ## fetch run scripts
 cd /tmp
-wget https://raw.githubusercontent.com/nhsung/public/master/{01_inst_git_zsh.sh,11_inst_pkgs.sh,sample_curl.sh}
+wget https://raw.githubusercontent.com/nhsung/public/master/{01_inst_git_zsh.sh,02_inst_amazon.sh,11_inst_pkgs.sh,sample_curl.sh}
 
 
 ## Package Repository
