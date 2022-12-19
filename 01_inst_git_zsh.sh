@@ -1,11 +1,11 @@
 # GIT
-sudo yum -y install git
+yum -y install git
 mkdir ~/GIT && cd ~/GIT
 git init
 
 #### SHELL
 ## ZSH
-sudo yum -y install util-linux-ng
+yum -y install util-linux-ng
 # enable zsh login shell
 sudo chsh -s $(which zsh) ec2-user
 ## OH-MY-ZSH
