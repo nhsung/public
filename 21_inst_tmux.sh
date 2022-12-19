@@ -14,6 +14,7 @@ END
 chmod 755 ./tmux_install.sh
 ./tmux_install.sh
 
+yum -y install tmate
 
 # TPM
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
