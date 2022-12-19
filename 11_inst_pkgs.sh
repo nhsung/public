@@ -9,17 +9,7 @@ sudo systemctl enable nginx
 ## yum
 
 # admin
-sudo yum -y install neovim tmux tmate
-
-# performance
-sudo yum -y install stress-ng fio
-
-# monitoring
-sudo yum -y install atop
-sudo systemctl enable atop
-sudo systemctl start atop
-
-sudo yum -y install nmon htop
+sudo yum -y install neovim tmate
 
 # network & storage
 sudo yum -y install wireshark nmap hping3 iperf3 \
