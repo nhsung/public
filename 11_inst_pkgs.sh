@@ -15,4 +15,4 @@ sudo yum -y install neovim
 sudo yum -y install wireshark nmap hping3 prettyping httping lftp
 
 # shell
-sudo yum -y install tree
+sudo yum -y install tree most
