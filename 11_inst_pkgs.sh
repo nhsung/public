@@ -1,18 +1,25 @@
 ## amazon-linux-extras
-sudo amazon-linux-extras install nginx1 -y
+amazon-linux-extras install nginx1 -y
 sleep 10
-sudo systemctl start nginx
-sudo systemctl enable nginx
+systemctl start nginx
+systemctl enable nginx
 
 
 
 ## yum
 
 # admin
-sudo yum -y install neovim
+yum -y install neovim
 
 # network & storage
-sudo yum -y install wireshark nmap hping3 prettyping httping lftp
+yum -y install wireshark nmap hping3 prettyping httping lftp
 
 # shell
-sudo yum -y install tree most
+yum -y install tree most
+
+# ripgrep
+cd /tmp
+wget 'https://github.com/BurntSushi/ripgrep/releases/download/0.5.2/ripgrep-0.5.2-x86_64-unknown-linux-musl.tar.gz'
+tar xzvf ripgrep-0.5.2-x86_64-unknown-linux-musl.tar.gz
+cd ripgrep-0.5.2-x86_64-unknown-linux-musl
+mv rg /usr/local/bin/
