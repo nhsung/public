@@ -14,6 +14,10 @@ yum -y install neovim
 # network & storage
 yum -y install wireshark nmap hping3 prettyping httping lftp
 
+# logs & edit
+yum -y install lnav
+
+
 # shell
 yum -y install tree most
 
