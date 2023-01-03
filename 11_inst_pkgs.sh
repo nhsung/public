@@ -19,7 +19,7 @@ yum -y install lnav
 
 
 # shell
-yum -y install tree most
+yum -y install tree most pv
 
 # ripgrep
 cd /tmp
