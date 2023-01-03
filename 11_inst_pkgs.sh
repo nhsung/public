@@ -8,18 +8,20 @@ systemctl enable nginx
 
 ## yum
 
+# platform
+yum -y install ruby-devel
+
 # admin
 yum -y install neovim
 
 # network & storage
-yum -y install wireshark nmap hping3 prettyping httping lftp
+yum -y install wireshark nmap hping3 prettyping httping lftp axel
 
 # logs & edit
-yum -y install lnav
-
+yum -y install lnav 
 
 # shell
-yum -y install tree most pv
+yum -y install ncdu tree most pv dialog
 
 # ripgrep
 cd /tmp
