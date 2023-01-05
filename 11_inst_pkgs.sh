@@ -42,3 +42,9 @@ wget https://github.com/knqyf263/pet/releases/download/v0.2.4/pet_0.2.4_linux_am
 unzip pet_0.2.4_linux_amd64.zip
 chmod 755 ./pet
 mv pet /usr/local/bin
+
+## bat
+cd /tmp
+wget https://github.com/sharkdp/bat/releases/download/v0.22.1/bat-v0.22.1-x86_64-unknown-linux-gnu.tar.gz
+tar xzvf bat-v0.22.1-x86_64-unknown-linux-gnu.tar.gz
+mv bat-v0.22.1-x86_64-unknown-linux-gnu/bat /usr/local/bin/bat

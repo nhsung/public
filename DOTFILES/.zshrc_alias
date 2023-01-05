@@ -10,9 +10,9 @@ alias vialias='vi ~/.zshrc_alias'
 alias vihosts='sudo nvim /etc/hosts'
 
 # vim
-#alias vi="nvim -p"
-#alias vim="nvim -p"
-#alias vimdiff="nvim -d"
+alias vi="nvim -p"
+alias vim="nvim -p"
+alias vimdiff="nvim -d"
 alias vimdiff="vim -d"
 alias vimrc='vi ~/.config/nvim/init.vim'
 alias -s {yml,yaml}=vi
