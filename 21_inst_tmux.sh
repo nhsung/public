@@ -9,7 +9,6 @@ cd tmux
 sh autogen.sh
 ./configure && make
 mv ./tmux /usr/local/bin/
-END
 
 chmod 755 ./tmux_install.sh
 ./tmux_install.sh

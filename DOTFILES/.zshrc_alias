@@ -1,0 +1,378 @@
+# PYTHON3
+alias python='python3'
+#alias pip='python3 -m pip'
+
+# bash
+alias sosh='source ~/.zshrc'
+alias soalias='source ~/.zshrc_alias'
+alias virc='vi ~/.zshrc'
+alias vialias='vi ~/.zshrc_alias'
+alias vihosts='sudo nvim /etc/hosts'
+
+# vim
+#alias vi="nvim -p"
+#alias vim="nvim -p"
+#alias vimdiff="nvim -d"
+alias vimdiff="vim -d"
+alias vimrc='vi ~/.config/nvim/init.vim'
+alias -s {yml,yaml}=vi
+alias -s {txt,cfg,log}=vi
+alias v='f -e nvim' # quick opening files with vim
+
+# etc
+alias webserver='python -m http.server 8080'
+alias top='top -i 1 -o cpu'
+alias atop='sudo asitop'
+alias btop='bashtop'
+alias gtop='gotop'
+alias htop='htop -d 10'
+alias Gtop='glances'
+alias nas='cd ~/NFS_DATA/ReadMe'
+alias mtail='multitail'
+# -i header & content, -I header only, content only
+alias curl='curl -vks -I -H "Cache-Control: no-cache" -X GET '
+#alias curl='curl -vks -i --head "Cache-Control: no-cache" -X GET '
+#multitail -s 2 -R 2 -l"netstat -t | grep ESTABLISHED"/var/log/messages
+alias wget='axel -n 10 -k -v -a'
+alias updatedb='sudo /usr/libexec/locate.updatedb'
+alias locate="glocate"
+alias icat='img2sixel --insecure'
+alias turl='tiny-URL'
+alias infuse='open -a infuse'
+alias youtube-dl0='youtube-dl -F'
+alias youtube-dl1='youtube-dl --write-sub --all-sub --merge-output-format mp4 -f'
+# alias ipcheck='curl ident.me'
+# alias ipcheck='curl ifconfig.me'
+alias ipcheck='curl icanhazip.com'
+
+
+# COPY & PASTE
+#alias pbdump='pbpaste | pastebinit | pbcopy'  # upload to pastebin server
+#alias pc='pastebinit -b sprunge.us'
+#alias pv='pbpaste | pastebinit -b sprunge.us'  # upload to pastebin server
+## init
+# echo "Welcome to AWS Marketplace" | curl -L -c ~/.midway/cookie -b ~/.midway/coo
+alias paste='paste.amazon.com -k 300days'
+alias tc='nc termbin.com 9999'
+alias tv='pbpaste | tc'          # upload to termbin server
+# ffsend
+#alias fc='ffsend upload --download-limit 20 -v'
+#alias fv='ffsend download -v'
+#alias finfo='ffsend info -v'
+#alias fhistory='ffsend history -v'
+
+
+# FASD
+alias a='fasd -a'        # any 이동
+alias s='fasd -si'       # interactive + select
+alias d='fasd -d'        # 디렉터리찾기
+alias f='fasd -f'        # 파일찾기
+alias sd='fasd -sid'     # 디렉터리 선택
+alias z='fasd_cd -d'     # 디렉터리 이동
+alias zz='fasd_cd -d -i' # 디렉터리 선택 후 이동
+
+# GO
+alias goscr='cd ~/SCRIPTS'
+alias godesktop='cd ~/Desktop'
+alias godoc='cd ~/Documents'
+alias godown='cd ~/Downloads'
+alias goicloud='cd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs'
+alias gobox='cd ~/Box\ Sync'
+alias godropbox='cd ~/Dropbox'
+alias goicloud='Library/Mobile\ Documents/com~apple~CloudDocs/'
+alias gouem='cd ~/Documents/TIPS/13_VM-UEM'
+alias gomac='cd ~/Documents/AWS/11_GITHUB/MACOSX'
+alias gokt='cd ~/Dropbox/KT_AMF_1.0.y'
+alias gosa='cd ~/Dropbox/TOOL/CISCO_5G_SA'
+alias gok8s='cd ~/Dropbox/TOOL/K8S'
+alias godocker='cd ~/Dropbox/TOOL/DOCKER'
+alias godcloud='cd /Users/nhsung/NFS_DATA/ReadMe/33_CISCO_DCLOUD'
+alias goansible='cd ~/Dropbox/TOOL/ANSIBLE'
+alias goktbuild='cd ~/Dropbox/KT_BUILD'
+alias gopython='cd ~/Dropbox/TOOL/PYTHON'
+alias gosnippets='cd ~/.vim/plugged/vim-snippets/snippets'
+alias readme='~/ReadMe'
+#alias gonas='~/NFS_DATA/ReadMe'
+#alias godocker='~/NFS_DATA/ReadMe/41_DOCKER'
+alias gocndp='cd ~/Dropbox/CNDP'
+# GIT
+alias goaws='  cd ~/Documents/AWS/11_GITHUB_AWS'
+alias goec2='  cd ~/Documents/AWS/11_GITHUB_AWS/01_EC2'
+alias gonet='  cd ~/Documents/AWS/11_GITHUB_AWS/02_NETWORK'
+alias gotips=' cd ~/Documents/AWS/12_GITHUB_TIPS'
+alias gomagic='cd ~/Documents/AWS/13_GITHUB_MAGIC'
+alias gorpi4=' cd ~/Documents/AWS/14_GITHUB_RPI4'
+alias gotr=' cd ~/Documents/AWS/15_GITHUB_TRAINING'
+#
+alias goebs='cd ~/Documents/AWS/11_GITHUB_AWS/01_EC2/14_EBS'
+alias gotool='cd ~/Documents/AWS/11_GITHUB_AWS/01_EC2/11_LINUX/00_LINUX/TOOL'
+
+# SYNOLOGY
+alias gonas='cd ~/SynologyDrive/'
+alias go5g='cd ~/SynologyDrive/31_CISCO_5G_SA/'
+alias gocndp='cd ~/SynologyDrive/32_CISCO_CNDP/'
+alias godocker='cd ~/SynologyDrive/41_DOCKER/'
+alias gok8s='cd ~/SynologyDrive/51_K8S/'
+alias gosynol='cd ~/SynologyDrive/61_SYNOLOGY/'
+alias gogcp='cd ~/SynologyDrive/81_GCP/'
+alias govmware='cd ~/SynologyDrive/91_VMWARE/'
+#alias gomac='cd ~/SynologyDrive/99_MACOS/'
+
+# ETC
+#alias cat='bat'
+#alias catp='bat -p'
+alias more='most'
+alias help='tldr'
+alias ping='prettyping --last 10'
+alias httping='httping -S -G -s -b -Z '
+alias ncdu='ncdu --color dark -rr -x --exclude .git --exclude node_modules'
+alias du='ncdu'
+#alias tree='exa -alT --icons'
+alias df='duf'
+alias dfi='duf --inodes'
+# APP
+alias safari="/Users/nhsung/SCRIPTS/APP_01_SAFARI"
+alias vsc='/Users/nhsung/SCRIPTS/APP_03_VSC'
+
+
+# display listening ports
+alias ports='lsof -PiTCP -sTCP:LISTEN'
+
+# ls
+#alias ls='exa -a'
+#alias lsg='exa -al --git'                 # git
+# colorls
+alias lsd='colorls --dirs -A'               # dir only
+alias lsf='colorls --files -A -h'           # files only
+alias lsn='colorls --sd -A -h'              # name (default)
+alias lsg='colorls --sd -A -h --git-status' # name (default)
+alias lst='colorls --sd -A -t -h -r'        # modified time
+alias lsat='colorls --sd -A -t -h -r -1l'   # modified time with long
+alias lss='colorls --sd -A -S -h -r -1l'    # size
+alias lse='colorls --sd -A -X -h -r -1l'    # extension
+alias lsa='colorls --sd -A -h -r -1l'       # with long
+alias tree='colorls -1 --tree --git-status'
+# grep
+alias grep='grep -i --colour' # colorize
+alias grep='rg --ignore-case --hidden'
+alias -g G='| grep -i'        # Globally used
+
+# dirs
+alias dir='dirs -v | head -10'
+alias d='dirs -v | head -10'
+alias 1='cd -1'
+alias 2='cd -2'
+alias 3='cd -3'
+alias 4='cd -4'
+alias 5='cd -5'
+alias 6='cd -6'
+alias 7='cd -7'
+alias 8='cd -8'
+alias 9='cd -9'
+
+# GIT & GIST
+# GIST - https://github.com/defunkt/gist
+# -p, to make it priviate <- default
+# --no-private
+# -P, to paste it from clipboard
+# -d, to add description
+# -u, to update
+# -c, to copy the resulting URL to your clipboard
+# -o, to open a browser window
+# -r, to read a gist and print it to STDOUT
+alias vigit='vi /Users/nhsung/.gitconfig'
+alias gist='gist -s -p -c '               # standard IO
+alias gistfile='gist -s -o '              # from file. [file]
+alias gistclip='gist -s -o -P'            # from clipboard
+alias gistupdate='gist -u '               # update existing gist, [id] [file]
+alias gistls='gist -l | cut -d'/' -f 4-'  # listing
+alias gistread='gist -r '                 # display it on terminal, [id]
+alias gistrm='gist -l | awk "!/\(secret\)/{print \$1}" | xargs -I {} gist --delete {}' # delete all that keyword is matched
+## gist update
+# ~/Dropbox/CONFIG_APP/GITHUB/GIST/gist_update_mac_mini_2018.sh
+# gist -u [id] -d [description] [file]
+## delete all
+#gist -l | awk '{print $1}' | xargs -I {} gist --delete {} # delete all
+## update description
+#alias gistdesc='gist -u $1 -d $2 '        # update description, [id] [description] [file]
+
+
+# VSCODE
+# alias sshcode_hdk='sshcode --skipsync --no-reuse-connection nhsung@hdk "~/SCRIPTS/"'
+alias sshcode='sshcode --b --no-reuse-connection'
+
+# ANSIBLE
+alias vians='vi ~/.ansible.cfg'
+alias viansinv='vi ~/.ansible/hosts'
+
+# TMUX
+alias vitmux='vi ~/.tmux/.tmux.conf'
+alias sotmux='tmux source-file ~/.tmux/.tmux.conf'
+alias tm='tmux'
+alias tmls='tmux list-sessions'
+alias tma='tmux attach'
+alias tmat='tmux attach -t'
+#alias tmad='tmux attach -d -t'
+alias tmns='tmux new-session -s'
+alias tmks='tmux kill-server'
+alias tmkst='tmux kill-session -t'
+#tmux show -g | sed 's/^/set-option -g /' > ~/.tmux/.tmux.conf.run
+alias mux='tmuxinator'
+# WEB TERMINAL
+#alias ttyd='ttyd -p 65432 -B --credential test:test tmux'
+alias ttyd='ttyd -p 65432 -B --credential test:test zsh'
+#alias gotty='gotty --port 54321 --permit-write --reconnect tmux'
+alias gotty='gotty --port 54321 --permit-write --reconnect zsh'
+
+# TMATE - with NATing
+alias tmate-msg='tmate show-messages'
+alias tmate-ssh-='tmate display -p '#{tmate_ssh}''
+alias sshtmate='ssh nhsung/tmate@sgp1.tmate.io'
+
+# Docker
+alias doc="docker-compose"
+alias doce="docker-compose exec"
+alias dockerip="docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'"
+
+alias dkps="docker ps"
+alias dkst="docker stats"
+alias dkpsa="docker ps -a"
+alias dkimgs="docker images"
+alias dkcpup="docker-compose up -d"
+alias dkcpdown="docker-compose down"
+alias dkcpstart="docker-compose start"
+alias dkcpstop="docker-compose stop"
+
+# Kubernetes
+alias k8='kubectl'
+alias k8ns='kubectl -n kube-system'
+# K9S
+alias k9s='k9s --namespace default'
+
+# LFTP
+alias vilftp='vi ~/.config/lftp/rc'
+#alias lftp_master='lftp -c " open master && lcd ~/tmp && cd ~/tmp && mput ./*"'
+#alias lftp_node1='lftp -c "  open node1  && lcd ~/tmp && cd ~/tmp && mput ./*"'
+#alias lftp_node2='lftp -c "  open node2  && lcd ~/tmp && cd ~/tmp && mput ./*"'
+#alias lftp_simul0='lftp -c "  open simul0 && lcd ~/tmp && cd ./tmp && mput ./*"'
+#alias lftp_simul1='lftp -c "  open simul1 && lcd ~/tmp && cd ./tmp && mput ./*"'
+#alias lftp_simul2='lftp -c "  open simul2 && lcd ~/tmp && cd ./tmp && mput ./*"'
+# REVERSE MIRROR - UPLOADING
+#alias lftp_amf4f='   lftp -c "open amf4f    && mirror -v -c -e --use-pget-n=5 --parallel=5 -R ~/tmp/qvpc-di sftp/tmp"'
+#alias lftp_amf7f='   lftp -c "open amf7f    && mirror -v -c -e --use-pget-n=5 --parallel=5 -R ~/tmp/qvpc-di sftp/tmp"'
+#alias lftp_amf7f_si='lftp -c "open amf7f_si && mirror -v -c -e --use-pget-n=5 --parallel=5 -R ~/tmp/qvpc-si sftp/tmp"'
+#lftp -e 'mirror -v -c --use-pget-n=5 --parallel=5 -R -i "\.(bin|cfg|txt)$" ./ sftp/tmp' -u admin,Cisco.123 amf7f
+#lftp -c "pget -n 10 http://example.com/foo.bar"
+#lftp -u user,pass ftp://site.com -e 'pget -c -n 6 file'
+#lftp -u user,pass ftp://site.com/ -e 'mirror -c --parallel=3 --use-pget-n=5 "Some folder"'
+
+# SSH
+#ssh -J jump server1
+#ssh -o ProxyCommand="ssh -W %h:%p bastion-host" remote-host
+alias vissh='vi ~/.ssh/config'
+alias sshid='ssh-copy-id -i ~/.ssh/id_rsa.pub '
+alias ssh="TERM=xterm-256color ssh"
+
+alias wol='wakeonlan 94:de:80:ea:b5:8e'
+alias wol1='wakeonlan 94:de:80:ea:b5:8f'
+alias wol2='wakeonlan 94:de:80:ea:b5:90'
+alias wol3='wakeonlan 94:de:80:ea:b5:91'
+alias wol_nuc7i7='wakeonlan 94:C6:91:11:1B:B6'
+alias wol_nuc7i3='wakeonlan F4:4D:30:6B:48:CF'
+alias wol_nuc3i3='wakeonlan EC:A8:6B:F2:9C:01'
+alias wol_nas='wakeonlan 00:11:32:1F:44:F9' 
+alias wol_dm='wakeonlan 94:de:80:ea:b5:8f' # 8e, 8f, 90, 91
+alias wol_r730='wakeonlan 14:18:77:38:81:66'
+
+alias poweroff_vm='sshpass -p Cisco.123 ssh root@192.168.25.205 esxcli vm  process kill -t soft -w=2099793'
+alias poweroff_host='sshpass -p Cisco.123 ssh root@192.168.25.205 poweroff'
+alias poweroff_all='poweroff_vm; sleep 5; poweroff_host'
+
+# AWS
+alias lftp-al='lftp sftp://al'
+
+
+## KDDI CPA LAB @ INDIA
+alias icsr1kv='ssh -tt -p 1234 nasung@0 ssh icsr1kv'
+alias icsr1kv2='ssh -tt -p 1234 nasung@0 ssh icsr1kv2'
+alias icsr1kv3='ssh -tt -p 1234 nasung@0 ssh icsr1kv3'
+alias icsr1kv4='ssh -tt -p 1234 nasung@0 ssh icsr1kv4'
+
+
+alias tol='cd /Users/nhsung/Box\ Sync/KDDI_TOL'
+alias cpa='cd ~/Box\ Sync/KDDI_CPA_PGW'
+
+
+## POWERCLI
+alias pwsh='cd ~/SCRIPTS/POWERSHELL ; pwd ; echo ; pwsh -ep Unrestricteds'
+# alias pwsh='cd ~/SCRIPTS/POWERSHELL ; pwd ; echo ; pwsh -ep Unrestricteds ./check-vm.ps1'
+
+
+# RANGER
+alias virgr='vi ~/.config/ranger/rc.conf'
+ alias rgr='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+
+ # VSC
+ alias vsc='code'
+
+
+
+#### DCloud
+alias sshdcm='sshpass -p Cisco@123      ssh -o ServerAliveInterval=60 dcm'
+alias sshdmaster='sshpass -p Cisco@123  ssh -o ServerAliveInterval=60 dmaster'
+alias sshdworker1='sshpass -p Cisco@123 ssh -o ServerAliveInterval=60 dworker1'
+alias sshdworker2='sshpass -p Cisco@123 ssh -o ServerAliveInterval=60 dworker2'
+alias sshdworker3='sshpass -p Cisco@123 ssh -o ServerAliveInterval=60 dworker3'
+alias sshdworker4='sshpass -p Cisco@123 ssh -o ServerAliveInterval=60 dworker4'
+alias sshdsimul='sshpass -p Cisco@123   ssh -o ServerAliveInterval=60 dsimul'
+alias sshdnso='sshpass -p Cisco@123 ssh -o ServerAliveInterval=60 dnso'
+alias sshdupf='sshpass -p Cisco@123 ssh -o ServerAliveInterval=60 dupf'
+alias sshdamf='sshpass -p Cisco@123 ssh -o ServerAliveInterval=60 damf'
+alias sshdsmf='sshpass -p Cisco@123 ssh -o ServerAliveInterval=60 dsmf'
+
+
+## CNDP
+alias cndp='cd ~/NFS_DATA/ReadMe/11_5G_SA/CNDP_LAB/'
+alias moshrm='find ~/.ssh -type socket -exec rm {} \;'
+
+
+## ZSH PLUGINS
+alias webg='web_search google'
+alias webp='web_search paragon'
+alias cppath='copypath'
+alias cpfile='copyfile'
+
+
+
+#### AWSCLI
+alias gocase='cd ~/Documents/AWS/01_CASE/2022-11' 
+## profile
+# profile
+alias awspf='echo $AWS_DEFAULT_PROFILE'
+alias awspf0='export AWS_DEFAULT_PROFILE="default"'
+alias awspf1='export AWS_DEFAULT_PROFILE="public"'
+## Access EC2
+# ssh with public ip
+alias awsssh='ssh -i ~/.ssh/ec2-kr-keypair.pem -l ec2-user'
+# ssm with instance id
+alias awsssm='aws ssm start-session --target'
+# serial
+#
+## Management EC2
+alias awsec2show='aws ec2 describe-instances --instance-ids'
+alias awsec2start='aws ec2 start-instances --instance-ids'
+alias awsec2stop='aws ec2 stop-instances --instance-ids'
+alias awsec2term='aws ec2 terminate-instances --instance-ids'
+alias awsconsole-r='awsconsole-reset i-0b2146bd322525c2c ap-northeast-2'
+alias awsconsole-0='awsconsole i-0b2146bd322525c2c ap-northeast-2'
+alias awsssm-0='awsssm i-0c01d9878597c391a '
+alias awsssm-1='awsssm i-0352c70dca79e75a2'
+
+alias gplot='gnuplot ~/Documents/AWS/ReadMe/GNU_PLOT/ab_config.plot'
+
+
+# PET
+function peta() {
+  PREV=$(fc -lrn | head -n 1)
+  sh -c "pet new -t `printf %q "$PREV"`"
+}
