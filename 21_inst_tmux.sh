@@ -1,14 +1,14 @@
-# Packages
-sudo yum groupinstall -y "Development Tools"
-sudo yum install -y libevent-devel ncurses-devel
+## Packages
+yum groupinstall -y "Development Tools"
+yum install -y libevent-devel ncurses-devel
 
-# Compile
+## Compile
 cd /tmp
 git clone https://github.com/tmux/tmux.git
 cd tmux
 sh autogen.sh
 ./configure && make
-sudo cp -p ./tmux /usr/local/bin/
+mv ./tmux /usr/local/bin/
 END
 
 chmod 755 ./tmux_install.sh
@@ -16,5 +16,5 @@ chmod 755 ./tmux_install.sh
 
 yum -y install tmate
 
-# TPM
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+## TPM
+sudo su - ec2-user -c "git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm"
