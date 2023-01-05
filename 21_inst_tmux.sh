@@ -12,5 +12,11 @@ mv ./tmux /usr/local/bin/
 mkdir ~/.tmux
 
 yum -y install tmate
+yum -y install xdg-open
 ## TPM
 sudo su - ec2-user -c "git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm"
+
+## GIT CLONE
+cd /tmp/public/DOTFILES
+cp -pf .tmux.conf                ~ec2-user/.tmux/
+ln -s ~ec2-user/.tmux/.tmux.conf ~ec2-user/.tmux.conf

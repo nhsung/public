@@ -1,4 +1,4 @@
-yum -y install sysstat atop --enablerepo=epel
+yum -y install sysstat atop
 yum -y install stress-ng fio iotop ioping iperf3 htop
 
 
