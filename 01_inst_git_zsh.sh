@@ -18,7 +18,13 @@ sudo su - ec2-user -c "git clone https://github.com/powerline/fonts.git --depth=
 sudo su - ec2-user -c "git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install --all"
 sudo su - ec2-user -c "~/.fzf/install --all"
 
-
+## PLUGIN
+sudo su - ec2-user -c "git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
+sudo su - ec2-user -c "git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
+sudo su - ec2-user -c "git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search"
+sudo su - ec2-user -c "git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting"
+sudo su - ec2-user -c "git clone https://github.com/wfxr/forgit ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/forgit"
+sudo su - ec2-user -c "git clone https://github.com/pierpo/fzf-docker ~/.oh-my-zsh/plugins/fzf-docker"
 
 
 ## GIT CLONE
