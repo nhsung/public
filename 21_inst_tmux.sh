@@ -9,13 +9,8 @@ cd tmux
 sh autogen.sh
 ./configure && make
 mv ./tmux /usr/local/bin/
-
-chmod 755 ./tmux_install.sh
-./tmux_install.sh
-
 mkdir ~/.tmux
 
 yum -y install tmate
-
 ## TPM
 sudo su - ec2-user -c "git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm"
