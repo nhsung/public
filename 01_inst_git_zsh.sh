@@ -17,3 +17,14 @@ sudo su - ec2-user -c "git clone https://github.com/powerline/fonts.git --depth=
 ## FZF
 sudo su - ec2-user -c "git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install --all"
 sudo su - ec2-user -c "~/.fzf/install --all"
+
+
+
+
+## GIT CLONE
+cd /tmp
+git clone https://github.com/nhsung/public.git
+cd public/DOTFILES
+cp -p .zsh* .fzf*sh .tmate.conf ~ec2-user/
+cp -p .p10.zsh .fzf.*sh         ~ec2-user/
+cp -p .tmux.conf                ~ec2-user/.tmux/
