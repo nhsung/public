@@ -25,6 +25,7 @@ sudo su - ec2-user -c "~/.fzf/install --all"
 cd /tmp
 git clone https://github.com/nhsung/public.git
 cd public/DOTFILES
-cp -p .zsh* .fzf*sh .tmate.conf ~ec2-user/
-cp -p .p10.zsh .fzf.*sh         ~ec2-user/
-cp -p .tmux.conf                ~ec2-user/.tmux/
+chown ec2-user:ec2-user .*
+cp -pf .zsh* .fzf*sh .tmate.conf ~ec2-user/
+cp -pf .p10.zsh .fzf.*sh         ~ec2-user/
+cp -pf .tmux.conf                ~ec2-user/.tmux/
