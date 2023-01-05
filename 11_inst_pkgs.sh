@@ -6,7 +6,7 @@ systemctl enable nginx
 
 
 ## platform
-yum -y install ruby-devel
+amazon-linux-extras install ruby3.0
 
 ## admin
 yum -y install neovim
@@ -19,6 +19,7 @@ yum -y install lnav jq
 
 ## shell
 yum -y install ncdu tree most pv dialog entr
+gem install colorls
 
 ## ripgrep
 cd /tmp

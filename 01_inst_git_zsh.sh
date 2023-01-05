@@ -28,5 +28,3 @@ cd public/DOTFILES
 chown ec2-user:ec2-user .*
 cp -pf .zsh* .fzf*sh .tmate.conf ~ec2-user/
 cp -pf .p10k.zsh .fzf.*sh        ~ec2-user/
-#cp -pf .tmux.conf                ~ec2-user/.tmux/
-#ln -s ~ec2-user/.tmux/.tmux.conf ~ec2-user/.tmux.conf
