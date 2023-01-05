@@ -13,6 +13,8 @@ mv ./tmux /usr/local/bin/
 chmod 755 ./tmux_install.sh
 ./tmux_install.sh
 
+mkdir ~/.tmux
+
 yum -y install tmate
 
 ## TPM
