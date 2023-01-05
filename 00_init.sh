@@ -16,6 +16,7 @@ wget https://raw.githubusercontent.com/nhsung/public/master/\
 ## Package Repository
 amazon-linux-extras enable epel
 amazon-linux-extras install epel -y
+yum -y install epel-release
 yum update -y
 yum upgrade -y
 
