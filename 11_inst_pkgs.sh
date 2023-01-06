@@ -46,3 +46,7 @@ cd /tmp
 wget https://github.com/sharkdp/bat/releases/download/v0.22.1/bat-v0.22.1-x86_64-unknown-linux-gnu.tar.gz
 tar xzvf bat-v0.22.1-x86_64-unknown-linux-gnu.tar.gz
 mv bat-v0.22.1-x86_64-unknown-linux-gnu/bat /usr/local/bin/bat
+
+## navi
+yum -y install cargo
+sudo su - ec2-user -c "cargo install navi"
