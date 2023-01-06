@@ -19,12 +19,15 @@ sudo su - ec2-user -c "git clone --depth 1 https://github.com/junegunn/fzf.git ~
 sudo su - ec2-user -c "~/.fzf/install --all"
 
 ## PLUGIN
-sudo su - ec2-user -c "git clone https://github.com/zsh-users/zsh-completions              ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-completions"
-sudo su - ec2-user -c "git clone https://github.com/zsh-users/zsh-autosuggestions          ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
-sudo su - ec2-user -c "git clone https://github.com/zsh-users/zsh-syntax-highlighting.git  ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
-sudo su - ec2-user -c "git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-history-substring-search"
-sudo su - ec2-user -c "git clone https://github.com/wfxr/forgit                            ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/forgit"
-sudo su - ec2-user -c "git clone https://github.com/pierpo/fzf-docker                      ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fzf-docker"
+sudo su - ec2-user -c "git clone https://github.com/zsh-users/zsh-completions                      ${ZSH_CUSTOM:-~ec2-user/.oh-my-zsh/custom}/plugins/zsh-completions"
+sudo su - ec2-user -c "git clone https://github.com/zsh-users/zsh-autosuggestions                  ${ZSH_CUSTOM:-~ec2-user/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
+sudo su - ec2-user -c "git clone https://github.com/zsh-users/zsh-syntax-highlighting.git          ${ZSH_CUSTOM:-~ec2-user/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
+sudo su - ec2-user -c "git clone https://github.com/zsh-users/zsh-history-substring-search         ${ZSH_CUSTOM:-~ec2-user/.oh-my-zsh/custom}/plugins/zsh-history-substring-search"
+sudo su - ec2-user -c "git clone https://github.com/wfxr/forgit                                    ${ZSH_CUSTOM:-~ec2-user/.oh-my-zsh/custom}/plugins/forgit"
+sudo su - ec2-user -c "git clone https://github.com/pierpo/fzf-docker                              ${ZSH_CUSTOM:-~ec2-user/.oh-my-zsh/custom}/plugins/fzf-docker"
+sudo su - ec2-user -c "git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM:-~ec2-user/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting"
+
+
 
 
 

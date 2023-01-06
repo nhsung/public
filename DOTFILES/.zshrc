@@ -82,12 +82,13 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git forgit vscode \
-	zsh-autosuggestions zsh-syntax-highlighting zsh-history-substring-search zsh-completions \
-  fzf-docker \
-	fasd z \
-  web-search sudo copyfile copypath copybuffer history \
-	fast-syntax-highlighting ripgrep command-not-found \
-  aws)
+zsh-autosuggestions zsh-syntax-highlighting zsh-history-substring-search zsh-completions \
+fast-syntax-highlighting \
+fzf-docker \
+fasd z \
+web-search sudo copyfile copypath copybuffer history \
+ripgrep command-not-found \
+aws)
 
 source $ZSH/oh-my-zsh.sh
 

@@ -7,9 +7,7 @@ systemctl enable nginx
 
 ## platform
 amazon-linux-extras install ruby3.0
-
-## admin
-yum -y install neovim
+yum -y install ruby-devel
 
 ## network & storage
 yum -y install wireshark nmap hping3 prettyping httping lftp axel
