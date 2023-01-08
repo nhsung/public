@@ -1,13 +1,14 @@
-# $USER
+## USER
 export USER=ec2-user
+export HOME=~$USER
 
 
 ## DOTFILES
 # backup
-mkdir ~$USER/GIT/public/DOTFILES/BACKUP/
-cd ~$USER
-mv -f .zsh* .fzf*sh .tmate.conf .p10k.zsh .fzf.*sh ~$USER/GIT/public/DOTFILES/BACKUP/
+mkdir $HOME/GIT/public/DOTFILES/BACKUP/
+cd $HOME
+mv -f .zsh* .fzf*sh .tmate.conf .p10k.zsh .fzf.*sh $HOME/GIT/public/DOTFILES/BACKUP/
 # apply
-cd ~$USER/GIT/public/DOTFILES
+cd $HOME/GIT/public/DOTFILES
 chown -R $USER:$USER .*
-cp -pf .zsh* .fzf*sh .tmate.conf .p10k.zsh .fzf.*sh ~$USER/
+cp -pf .zsh* .fzf*sh .tmate.conf .p10k.zsh .fzf.*sh $HOME

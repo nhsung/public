@@ -1,7 +1,8 @@
 #### curl -sH "Cache-Control: no-cache, no-store"  https://raw.githubusercontent.com/nhsung/public/master/00_init.sh | bash -s
 
-# $USER
+# USER
 export USER=ec2-user
+export HOME=~$USER
 
 
 ## TimeZone 
@@ -15,10 +16,9 @@ yum upgrade -y
 
 
 ## run Scripts
-mkdir -p $USER/GIT/public/
-cd $USER/GIT/public/
+mkdir -p $HOME/GIT/public/
+cd $HOME/GIT/public/
 git clone https://github.com/nhsung/public.git .
-#ls *sh | xargs -I {} bash -s {}
 cat 01_inst_zsh.sh       | bash -s
 cat 02_inst_dotfiles.sh  | bash -s
 cat 11_inst_pkgs.s       | bash -s
