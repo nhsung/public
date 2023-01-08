@@ -1,5 +1,6 @@
-# $USER
-export USER=~ec2-user
+## USER
+export USER=ec2-user
+export HOME=~$USER
 
 
 ## neovim
