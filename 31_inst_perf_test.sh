@@ -1,5 +1,5 @@
-yum -y install sysstat atop --enablerepo=epel
-yum -y install stress-ng fio iotop ioping iperf3 htop
+yum install sysstat atop --enablerepo=epel -y
+yum install stress-ng fio iotop ioping iperf3 htop -y
 
 
 ## configure the ATOP and SAR monitoring tools

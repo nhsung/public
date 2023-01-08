@@ -1,22 +1,26 @@
+# $USER
+export USER=~ec2-user
+
+
 ## Packages
-yum groupinstall -y "Development Tools"
-yum install -y libevent-devel ncurses-devel
+yum groupinstall "Development Tools" -y
+yum install libevent-devel ncurses-devel -y
 
 ## Compile
-cd /tmp
+cd $USER/GIT
 git clone https://github.com/tmux/tmux.git
-cd tmux
+cd $USER/GIT
 sh autogen.sh
 ./configure && make
 mv ./tmux /usr/local/bin/
 mkdir ~/.tmux
 
-yum -y install tmate
-yum -y install xdg-utils
+yum install tmate xdg-utils -y
 ## TPM
-sudo su - ec2-user -c "git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm"
+cd $USER/GIT
+sudo su - $HOME -c "git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm"
 
 ## GIT CLONE
-cd /tmp/public/DOTFILES
-cp -pf .tmux.conf                ~ec2-user/.tmux/
-ln -s ~ec2-user/.tmux/.tmux.conf ~ec2-user/.tmux.conf
+cd $USER/GIT/public/DOTFILES
+cp -pf .tmux.conf            $HOME/.tmux/
+ln -s $HOME/.tmux/.tmux.conf $HOME/.tmux.conf

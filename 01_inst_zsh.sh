@@ -1,14 +1,12 @@
 # $USER
-export USER=ec2-user
+export USER=~ec2-user
 
 
 ## GIT
 yum install git -y
-
-
 #### SHELL
 ## ZSH
-yum -y install zsh util-linux-user
+yum install zsh util-linux-user -y
 ## switch to zsh as login shell
 sudo chsh -s $(which zsh) $USER
 ## OH-MY-ZSH
@@ -29,12 +27,3 @@ sudo su - $USER -c "git clone https://github.com/zsh-users/zsh-history-substring
 sudo su - $USER -c "git clone https://github.com/wfxr/forgit                                    ${ZSH_CUSTOM:-~$USER/.oh-my-zsh/custom}/plugins/forgit"
 sudo su - $USER -c "git clone https://github.com/pierpo/fzf-docker                              ${ZSH_CUSTOM:-~$USER/.oh-my-zsh/custom}/plugins/fzf-docker"
 sudo su - $USER -c "git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM:-~$USER/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting"
-
-
-## GIT CLONE
-cd $USER/GIT
-git clone https://github.com/nhsung/public.git
-cd public/DOTFILES
-chown -R $USER:$USER .*
-cp -pf .zsh* .fzf*sh .tmate.conf $USER/
-cp -pf .p10k.zsh .fzf.*sh        $USER/

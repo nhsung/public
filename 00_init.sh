@@ -2,6 +2,7 @@
 
 # $USER
 export USER=~ec2-user
+mkdir -p $USER/GIT/public/DOTFILES/BACKUP
 
 
 ## TimeZone 
@@ -9,9 +10,9 @@ timedatectl set-timezone Asia/Seoul
 
 
 ## fetch run scripts
-mkdir $USER/GIT
-wget -P $USER/GIT https://raw.githubusercontent.com/nhsung/public/master/{01_inst_git_zsh.sh,02_inst_amazon.sh,11_inst_pkgs.sh,21_inst_tmux.sh,22_inst_neovim.sh,sample_curl.sh}
+#wget -P $USER/GIT https://raw.githubusercontent.com/nhsung/public/master/{01_inst_git_zsh.sh,02_inst_amazon.sh,11_inst_pkgs.sh,21_inst_tmux.sh,22_inst_neovim.sh,sample_curl.sh}
 
+#wget -P $USER/GIT https://raw.githubusercontent.com/nhsung/public/master/{01_inst_git_zsh.sh,02_inst_amazon.sh,11_inst_pkgs.sh,21_inst_tmux.sh,22_inst_neovim.sh,sample_curl.sh}
 
 ## Package Repository
 amazon-linux-extras enable epel
@@ -21,10 +22,7 @@ yum update -y
 yum upgrade -y
 
 
-## run scripts on ec2
-cat 01_inst_git_zsh.sh | bash -s
-cat 02_inst_amazon.sh | bash -s
-cat 11_inst_pkgs.sh | bash -s
-cat 21_inst_tmux.sh | bash -s
-cat 22_inst_neovim.sh | bash -s
-cat 31_inst_perf_test.sh | bash -s
+## run Scripts
+cd $USER/GIT/public
+git clone https://github.com/nhsung/public.git .
+ls *sh | xargs -I {} bash -s {}
