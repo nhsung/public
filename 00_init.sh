@@ -1,7 +1,7 @@
 #### curl -sH "Cache-Control: no-cache, no-store"  https://raw.githubusercontent.com/nhsung/public/master/00_init.sh | bash -s
 
 # $USER
-export USER=~ec2-user
+export USER=ec2-user
 
 
 ## TimeZone 
