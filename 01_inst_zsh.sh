@@ -2,8 +2,6 @@
 export USER=~ec2-user
 
 
-## GIT
-yum install git -y
 #### SHELL
 ## ZSH
 yum install zsh util-linux-user -y
