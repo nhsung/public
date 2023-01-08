@@ -26,7 +26,6 @@ mkdir -p $USER/GIT/public/
 cd $USER/GIT/public/
 git clone https://github.com/nhsung/public.git .
 #ls *sh | xargs -I {} bash -s {}
-cat 00_init.sh           | bash -s
 cat 01_inst_zsh.sh       | bash -s
 cat 02_inst_dotfiles.sh  | bash -s
 cat 11_inst_pkgs.s       | bash -s
